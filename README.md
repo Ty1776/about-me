@@ -11,6 +11,9 @@
 
 ## Lab03
 
-- Added JS array
+- Top 10 list in HTML and applied CSS styling to list
+- JS number game
+- JS array guessing question
+- Score tracker for questions
 
 ## Lab04

@@ -16,17 +16,27 @@ h1 {
 main p {
   font-family: arial;
   color: whitesmoke;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 h2 {
   font-family: courier;
   font-size: larger;
   color: aliceblue;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 ul li {
+  list-style-type: circle;
   color: aliceblue;
+  margin-left: 15px;
+ }
+
+ol li {
+  list-style-type: decimal;
+  color: aliceblue;
+  margin-left: 15px;
 }
 
 footer {

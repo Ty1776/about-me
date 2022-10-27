@@ -58,22 +58,24 @@ if (questionFive === 'YES' || questionFive === 'Y') {
   alert('Incorrect');
 }
 
-let favNum = '14';
+let favNum = 14;
 let guesses = 4;
 while (guesses > 0) {
-  let questionSix = prompt('What is my favorite number between 1-20?');
+  let questionSix = +prompt('What is my favorite number between 1-20?');
   if (questionSix === favNum) {
     alert('Youre correct! Good guess!');
     score++;
     break;
   } else if (questionSix > favNum) {
-    alert(`Too high, try again. ${guesses} guesses remaining.`);
+    alert(`Too high, try again. ${guesses - 1} guesses remaining.`);
   } else if (questionSix < favNum) {
-    alert(`Too low, try again. ${guesses} guesses remaining.`);
+    alert(`Too low, try again. ${guesses - 1} guesses remaining.`);
   }
   guesses--;
 }
-alert(`The correct answer was ${favNum}.`);
+if (guesses === 0) {
+  alert(`The correct answer was ${favNum}.`);
+}
 
 let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
 let guessesTwo = 6;
@@ -90,12 +92,12 @@ while (guessesTwo > 0) {
     score++;
     break;
   } else {
-    alert(`${questionSeven} is not a common heat source. ${guessesTwo} guesses remaining.`);
+    alert(`${questionSeven} is not a common heat source. ${guessesTwo - 1} guesses remaining.`);
   }
   guessesTwo--;
 }
 alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 
-alert(`Your final score is ${score}.`);
+alert(`Your final score is ${score} out of 7.`);
 
 alert(`Thanks for playing, ${visitorName}. It's nice of you to stop by!`);

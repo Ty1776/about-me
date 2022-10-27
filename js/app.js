@@ -95,25 +95,28 @@ function game() {
 }
 game();
 
-let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
-let guessesTwo = 6;
-let isCorrect = false;
-while (guessesTwo > 0) {
-  let questionSeven = prompt('What are the most common home heat sources?').toLowerCase();
-  for (let i = 0; i < heatSource.length; i++) {
-    if (heatSource[i] === questionSeven) {
-      isCorrect = true;
+function heat() {
+  let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
+  let guessesTwo = 6;
+  let isCorrect = false;
+  while (guessesTwo > 0) {
+    let questionSeven = prompt('What are the most common home heat sources?').toLowerCase();
+    for (let i = 0; i < heatSource.length; i++) {
+      if (heatSource[i] === questionSeven) {
+        isCorrect = true;
+      }
     }
+    if (isCorrect) {
+      alert(`Correct! ${questionSeven} is a common heat source!`);
+      score++;
+      break;
+    } else {
+      alert(`${questionSeven} is not a common heat source. ${guessesTwo - 1} guesses remaining.`);
+    }
+    guessesTwo--;
   }
-  if (isCorrect) {
-    alert(`Correct! ${questionSeven} is a common heat source!`);
-    score++;
-    break;
-  } else {
-    alert(`${questionSeven} is not a common heat source. ${guessesTwo - 1} guesses remaining.`);
-  }
-  guessesTwo--;
 }
+heat();
 alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 
 alert(`Your final score is ${score} out of 7.`);

@@ -73,24 +73,27 @@ function food() {
 }
 food();
 
-let favNum = 14;
-let guesses = 4;
-while (guesses > 0) {
-  let questionSix = +prompt('What is my favorite number between 1-20?');
-  if (questionSix === favNum) {
-    alert('Youre correct! Good guess!');
-    score++;
-    break;
-  } else if (questionSix > favNum) {
-    alert(`Too high, try again. ${guesses - 1} guesses remaining.`);
-  } else if (questionSix < favNum) {
-    alert(`Too low, try again. ${guesses - 1} guesses remaining.`);
+function game() {
+  let favNum = 14;
+  let guesses = 4;
+  while (guesses > 0) {
+    let questionSix = +prompt('What is my favorite number between 1-20?');
+    if (questionSix === favNum) {
+      alert('Youre correct! Good guess!');
+      score++;
+      break;
+    } else if (questionSix > favNum) {
+      alert(`Too high, try again. ${guesses - 1} guesses remaining.`);
+    } else if (questionSix < favNum) {
+      alert(`Too low, try again. ${guesses - 1} guesses remaining.`);
+    }
+    guesses--;
   }
-  guesses--;
+  if (guesses === 0) {
+    alert(`The correct answer was ${favNum}.`);
+  }
 }
-if (guesses === 0) {
-  alert(`The correct answer was ${favNum}.`);
-}
+game();
 
 let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
 let guessesTwo = 6;

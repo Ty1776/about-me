@@ -8,15 +8,18 @@ let visitorName = prompt('Hello! What is your name?');
 // console.log(visitorName);
 alert(`Welcome to my site ${visitorName}! Please answer "Yes" or "No" to the following questions.`);
 
-let questionOne = prompt('Do I like si-fi?').toUpperCase();
-if (questionOne === 'YES' || questionOne === 'Y') {
-  // console.log(questionOne + ' Correct');
-  alert('Correct');
-  score++;
-} else if (questionOne === 'NO' || questionOne === 'N') {
-  // console.log(questionOne + ' incorrect');
-  alert('Incorrect');
+function sifi() {
+  let questionOne = prompt('Do I like si-fi?').toUpperCase();
+  if (questionOne === 'YES' || questionOne === 'Y') {
+    // console.log(questionOne + ' Correct');
+    alert('Correct');
+    score++;
+  } else if (questionOne === 'NO' || questionOne === 'N') {
+    // console.log(questionOne + ' incorrect');
+    alert('Incorrect');
+  }
 }
+sifi();
 
 let questionTwo = prompt('Do I like to adventure?').toUpperCase();
 if (questionTwo === 'YES' || questionTwo === 'Y') {

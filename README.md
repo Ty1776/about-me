@@ -17,3 +17,7 @@
 - Score tracker for questions
 
 ## Lab04
+
+-Add functions to each quesitons
+-Driver Robert
+-Navigator Tyler

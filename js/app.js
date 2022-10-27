@@ -35,27 +35,30 @@ function adventure() {
 adventure();
 
 function military() {
-let questionThree = prompt('Was I in the Air Force?').toUpperCase();
-if (questionThree === 'YES' || questionThree === 'Y') {
-  // console.log(questionThree + ' Correct');
-  alert('Correct');
-  score++;
-} else if (questionThree === 'NO' || questionThree === 'N') {
-  // console.log(questionThree + ' incorrect');
-  alert('Incorrect');
-}
+  let questionThree = prompt('Was I in the Air Force?').toUpperCase();
+  if (questionThree === 'YES' || questionThree === 'Y') {
+    // console.log(questionThree + ' Correct');
+    alert('Correct');
+    score++;
+  } else if (questionThree === 'NO' || questionThree === 'N') {
+    // console.log(questionThree + ' incorrect');
+    alert('Incorrect');
+  }
 }
 military();
 
-let questionFour = prompt('Do I have any pets?').toUpperCase();
-if (questionFour === 'NO' || questionFour === 'N') {
-  // console.log(questionFour + ' Correct');
-  alert('Correct');
-  score++;
-} else if (questionFour === 'YES' || questionFour === 'Y') {
-  // console.log(questionFour + ' incorrect');
-  alert('Incorrect');
+function pets() {
+  let questionFour = prompt('Do I have any pets?').toUpperCase();
+  if (questionFour === 'NO' || questionFour === 'N') {
+    // console.log(questionFour + ' Correct');
+    alert('Correct');
+    score++;
+  } else if (questionFour === 'YES' || questionFour === 'Y') {
+    // console.log(questionFour + ' incorrect');
+    alert('Incorrect');
+  }
 }
+pets();
 
 let questionFive = prompt('Do I like food?').toUpperCase();
 if (questionFive === 'YES' || questionFive === 'Y') {

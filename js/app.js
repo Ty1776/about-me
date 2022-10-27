@@ -115,9 +115,9 @@ function heat() {
     }
     guessesTwo--;
   }
+  alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 }
 heat();
-alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 
 alert(`Your final score is ${score} out of 7.`);
 

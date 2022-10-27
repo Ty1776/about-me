@@ -60,15 +60,18 @@ function pets() {
 }
 pets();
 
-let questionFive = prompt('Do I like food?').toUpperCase();
-if (questionFive === 'YES' || questionFive === 'Y') {
-  // console.log(questionFive + ' Correct');
-  alert('Correct');
-  score++;
-} else if (questionFive === 'NO' || questionFive === 'N') {
-  // console.log(questionFive + ' incorrect');
-  alert('Incorrect');
+function food() {
+  let questionFive = prompt('Do I like food?').toUpperCase();
+  if (questionFive === 'YES' || questionFive === 'Y') {
+    // console.log(questionFive + ' Correct');
+    alert('Correct');
+    score++;
+  } else if (questionFive === 'NO' || questionFive === 'N') {
+    // console.log(questionFive + ' incorrect');
+    alert('Incorrect');
+  }
 }
+food();
 
 let favNum = 14;
 let guesses = 4;

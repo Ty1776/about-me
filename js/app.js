@@ -34,6 +34,7 @@ function adventure() {
 }
 adventure();
 
+function military() {
 let questionThree = prompt('Was I in the Air Force?').toUpperCase();
 if (questionThree === 'YES' || questionThree === 'Y') {
   // console.log(questionThree + ' Correct');
@@ -43,6 +44,8 @@ if (questionThree === 'YES' || questionThree === 'Y') {
   // console.log(questionThree + ' incorrect');
   alert('Incorrect');
 }
+}
+military();
 
 let questionFour = prompt('Do I have any pets?').toUpperCase();
 if (questionFour === 'NO' || questionFour === 'N') {

@@ -21,15 +21,18 @@ function sifi() {
 }
 sifi();
 
-let questionTwo = prompt('Do I like to adventure?').toUpperCase();
-if (questionTwo === 'YES' || questionTwo === 'Y') {
-  // console.log(questionTwo + ' Correct');
-  alert('Correct');
-  score++;
-} else if (questionTwo === 'NO' || questionTwo === 'N') {
-  // console.log(questionTwo + ' incorrect');
-  alert('Incorrect');
+function adventure() {
+  let questionTwo = prompt('Do I like to adventure?').toUpperCase();
+  if (questionTwo === 'YES' || questionTwo === 'Y') {
+    // console.log(questionTwo + ' Correct');
+    alert('Correct');
+    score++;
+  } else if (questionTwo === 'NO' || questionTwo === 'N') {
+    // console.log(questionTwo + ' incorrect');
+    alert('Incorrect');
+  }
 }
+adventure();
 
 let questionThree = prompt('Was I in the Air Force?').toUpperCase();
 if (questionThree === 'YES' || questionThree === 'Y') {

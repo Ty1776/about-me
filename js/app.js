@@ -63,18 +63,17 @@ let guesses = 4;
 while (guesses > 0) {
   let questionSix = prompt('What is my favorite number between 1-20?');
   if (questionSix === favNum) {
-    alert('Good guess!');
+    alert('Youre correct! Good guess!');
     score++;
     break;
-  }
-  else if (questionSix > favNum) {
+  } else if (questionSix > favNum) {
     alert(`Too high, try again. ${guesses} guesses remaining.`);
-  }
-  else if (questionSix < favNum) {
+  } else if (questionSix < favNum) {
     alert(`Too low, try again. ${guesses} guesses remaining.`);
   }
   guesses--;
 }
+alert(`The correct answer was ${favNum}.`);
 
 let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
 let guessesTwo = 6;

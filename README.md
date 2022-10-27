@@ -18,6 +18,6 @@
 
 ## Lab04
 
--Add functions to each quesitons
--Driver Robert
--Navigator Tyler
+-Add functions to each quesitons  
+-Driver Robert  
+-Navigator Tyler  

@@ -2,11 +2,11 @@
 
 // console.log('Hello World');
 
-// #pragma: Global variables
+// Global variables
 
 let score = 0;
 
-// #pragma: Function Declarations/Definitions
+// Function Declarations/Definitions
 
 function sifi() {
   let questionOne = prompt('Do I like si-fi?').toUpperCase();
@@ -26,7 +26,7 @@ function adventure() {
   while (!validAnswer) {
     let questionTwo = prompt('Do I like to adventure?').toUpperCase();
     if (questionTwo === 'YES' || questionTwo === 'Y') {
-     // console.log(questionTwo + ' Correct');
+      // console.log(questionTwo + ' Correct');
       alert('Correct');
       validAnswer = true;
       score++;
@@ -118,7 +118,7 @@ function heat() {
   alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 }
 
-// #pragma: Executable Code
+// Executable Code
 
 let visitorName = prompt('Hello! What is your name?');
 // console.log(visitorName);

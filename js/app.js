@@ -22,14 +22,20 @@ function sifi() {
 sifi();
 
 function adventure() {
-  let questionTwo = prompt('Do I like to adventure?').toUpperCase();
-  if (questionTwo === 'YES' || questionTwo === 'Y') {
-    // console.log(questionTwo + ' Correct');
-    alert('Correct');
-    score++;
-  } else if (questionTwo === 'NO' || questionTwo === 'N') {
-    // console.log(questionTwo + ' incorrect');
-    alert('Incorrect');
+  // added boolean to continue prompting until we get a valid answer
+  let validAnswer = false;
+  while (!validAnswer) {
+    let questionTwo = prompt('Do I like to adventure?').toUpperCase();
+    if (questionTwo === 'YES' || questionTwo === 'Y') {
+     // console.log(questionTwo + ' Correct');
+      alert('Correct');
+      validAnswer = true;
+      score++;
+    } else if (questionTwo === 'NO' || questionTwo === 'N') {
+      // console.log(questionTwo + ' incorrect');
+      alert('Incorrect');
+      validAnswer = true;
+    }
   }
 }
 adventure();
@@ -97,9 +103,9 @@ game();
 
 function heat() {
   let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
-  let guessesTwo = 6;
+  let guesses = 6;
   let isCorrect = false;
-  while (guessesTwo > 0) {
+  while (guesses > 0) {
     let questionSeven = prompt('What are the most common home heat sources?').toLowerCase();
     for (let i = 0; i < heatSource.length; i++) {
       if (heatSource[i] === questionSeven) {
@@ -111,9 +117,9 @@ function heat() {
       score++;
       break;
     } else {
-      alert(`${questionSeven} is not a common heat source. ${guessesTwo - 1} guesses remaining.`);
+      alert(`${questionSeven} is not a common heat source. ${guesses - 1} guesses remaining.`);
     }
-    guessesTwo--;
+    guesses--;
   }
   alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 }

@@ -2,11 +2,11 @@
 
 // console.log('Hello World');
 
+// #pragma: Global variables
+
 let score = 0;
 
-let visitorName = prompt('Hello! What is your name?');
-// console.log(visitorName);
-alert(`Welcome to my site ${visitorName}! Please answer "Yes" or "No" to the following questions.`);
+// #pragma: Function Declarations/Definitions
 
 function sifi() {
   let questionOne = prompt('Do I like si-fi?').toUpperCase();
@@ -19,7 +19,6 @@ function sifi() {
     alert('Incorrect');
   }
 }
-sifi();
 
 function adventure() {
   // added boolean to continue prompting until we get a valid answer
@@ -38,7 +37,6 @@ function adventure() {
     }
   }
 }
-adventure();
 
 function military() {
   let questionThree = prompt('Was I in the Air Force?').toUpperCase();
@@ -51,7 +49,6 @@ function military() {
     alert('Incorrect');
   }
 }
-military();
 
 function pets() {
   let questionFour = prompt('Do I have any pets?').toUpperCase();
@@ -64,7 +61,6 @@ function pets() {
     alert('Incorrect');
   }
 }
-pets();
 
 function food() {
   let questionFive = prompt('Do I like food?').toUpperCase();
@@ -77,7 +73,6 @@ function food() {
     alert('Incorrect');
   }
 }
-food();
 
 function game() {
   let favNum = 14;
@@ -99,7 +94,6 @@ function game() {
     alert(`The correct answer was ${favNum}.`);
   }
 }
-game();
 
 function heat() {
   let heatSource = ['electric', 'gas', 'hydronic', 'geothermal'];
@@ -123,6 +117,19 @@ function heat() {
   }
   alert(`The possible answers were: ${heatSource[0]}, ${heatSource[1]}, ${heatSource[2]}, ${heatSource[3]}.`);
 }
+
+// #pragma: Executable Code
+
+let visitorName = prompt('Hello! What is your name?');
+// console.log(visitorName);
+alert(`Welcome to my site ${visitorName}! Please answer "Yes" or "No" to the following questions.`);
+
+sifi();
+adventure();
+military();
+pets();
+food();
+game();
 heat();
 
 alert(`Your final score is ${score} out of 7.`);
